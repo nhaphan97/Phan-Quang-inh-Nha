@@ -1,0 +1,114 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-shadow: 2px 2px 4px 4px rgb(224, 222, 222);
+    height: auto;
+    margin: 20px auto;
+    max-width: 1200px;
+    font-family: Arial, sans-serif; /* Ensure a fallback font is specified */
+}
+
+.main {
+    background-color: #f2f2f2;
+    padding: 20px 18px;
+}
+
+.title-game {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Add spacing below the title */
+}
+
+.option-help {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 200px;
+}
+
+.btn-help {
+    border: 1px solid #333;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center; /* Center button text */
+}
+
+.btn-help:hover {
+    cursor: pointer;
+    background-color: #ddd; /* Change background color on hover */
+}
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.questions {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.questions.active {
+    display: block;
+}
+
+.title-question {
+    text-align: center;
+    margin-bottom: 10px; /* Add space below the title */
+}
+
+.answers-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-answers {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center; /* Center answer text */
+}
+
+.item-answers.selected {
+    background-color: #D3D3D3;
+}
+
+.item-answers:hover {
+    cursor: pointer;
+    background-color: #eee; /* Change background color on hover */
+}
+
+.button-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 2px;
+    color: #fff;
+    width: 100px;
+    height: 40px; /* Increase height for better touch area */
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-check:hover {
+    background-color: #333; /* Darken background on hover */
+}
+
+.disabled {
+    display: none;
+}
